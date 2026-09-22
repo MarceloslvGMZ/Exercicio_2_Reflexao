@@ -1,5 +1,6 @@
 import { Aluno } from "../modelo/Aluno";
 import { Pessoa } from "../modelo/Pessoa";
+import { Produto } from "../modelo/Produto";
 import { SuperTabela } from "../modelo/SuperTabela";
 import { ReflexaoTabela } from "../utils/ReflexaoTabela";
 
@@ -22,6 +23,9 @@ const aluno = new Aluno("123456", "", "123456");
 //aluno.setNome("Aluno");
 aluno.setTelefone("999999");
 imprimirDadosTabela(aluno);
+
+const produto = new Produto(10, "");
+imprimirDadosTabela(produto);
 
 // setPk() não conhece o nome do atributo: a ReflexaoTabela encontra o campo
 // anotado como PK e chama seu setter dinamicamente.
